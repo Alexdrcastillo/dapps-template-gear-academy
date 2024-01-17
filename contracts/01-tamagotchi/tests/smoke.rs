@@ -2,9 +2,19 @@ use gtest::{Program, System};
 
 #[test]
 fn smoke_test() {
-    let sys = System::new();
-    sys.init_logger();
-    let _program = Program::current(&sys);
+    // 8️⃣ Test the program initialization and message handling
 
-    // TODO: 8️⃣ Test the program initialization and message handling
+    // Crear un nuevo sistema
+    let sys = System::new();
+    // Inicializar el logger del sistema
+    sys.init_logger();
+    
+    // Obtener la instancia actual del programa
+    let program = Program::current(&sys);
+
+    // TODO: 8️⃣ Verificar la inicialización del programa
+    // ...
+
+    // TODO: 8️⃣ Probar el manejo de mensajes
+    // ...
 }
